@@ -1,0 +1,86 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #7bcad8; */
+    background-color: #fff;
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure the navbar appears above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__list {
+    display: flex;
+    list-style: none;
+}
+
+.navbar__item {
+    padding: 0 10px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar__link:hover {
+    color: #ff6347;
+}
+
+.navbar__cart {
+    position: relative;
+    color: #333;
+}
+
+.navbar__cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff6347;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.logo-image {
+    width: 60px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__container {
+        flex-direction: column;
+    }
+
+    .navbar__center {
+        margin-top: 20px;
+    }
+
+    .navbar__right {
+        margin-top: 20px;
+    }
+}
